@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# 17-3-2013:v2
+CACHE:
+apple-touch-icon-precomposed.png
+index.html
+FALLBACK:
+/ index.html
+NETWORK:
+*
+
