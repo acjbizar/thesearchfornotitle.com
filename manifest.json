@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "version": "20190721",
+    "name": "The Search for No Title",
+    "default_locale": "en",
+    "description": "A monument to a forgotten composition.",
+    "author": "Alexander Christiaan Jacob",
+    "theme_color": "#ffc0cb",
+    "homepage_url": "https://thesearchfornotitle.com/",
+    "start_url": "https://thesearchfornotitle.com/",
+    "icons": [
+        {
+            "src": "https://thesearchfornotitle.com/apple-touch-icon-precomposed.png"
+        }
+    ],
+    "display": "fullscreen"
+}

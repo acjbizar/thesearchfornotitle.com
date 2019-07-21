@@ -2,67 +2,71 @@
 <html dir="ltr" lang="en">
 <head>
     <meta charset="utf-8">
-    <meta property="fb:admins" content="509248955">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="The Search">
     <meta name="application-name" content="The Search">
-    <meta name="description" property="og:description" content="“The Search for No Title” by Alexander Christiaan Jacob, 2012. A monument to a forgotten composition.">
+    <meta name="description" content="“The Search for No Title” by Alexander Christiaan Jacob, 2012. A monument to a forgotten composition.">
+    <meta name="theme-color" content="#ffc0cb">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@ACJ">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,width=device-width">
+    <meta property="fb:admins" content="509248955">
+    <meta property="og:description" content="“The Search for No Title” by Alexander Christiaan Jacob, 2012. A monument to a forgotten composition.">
     <meta property="og:image" content="https://thesearchfornotitle.com/icon-256x256.png">
     <meta property="og:title" content="The Search for No Title">
     <meta property="og:type" content="website">
-    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,width=device-width">
     <meta property="og:url" content="https://thesearchfornotitle.com/">
     <title>The Search for No Title</title>
     <link rel="apple-touch-icon-precomposed" href="https://thesearchfornotitle.com/apple-touch-icon-precomposed.png">
     <link rel="author" href="https://alexanderchristiaanjacob.com/" title="Alexander Christiaan Jacob">
     <link rel="canonical" href="https://thesearchfornotitle.com/">
     <link rel="icon" href="https://thesearchfornotitle.com/favicon.png">
+    <link rel="manifest" href="https://thesearchfornotitle.com/manifest.json">
     <style>
         *{border:0;margin:0;outline:0;padding:0;text-decoration:none}
-        head{display:none}
-        body,canvas,html{display:block;height:100%;width:100%}
+        body,canvas,html{display:block;height:100%;overflow:hidden;width:100%}
     </style>
-    <script>
-
-        "use strict";
-
-        var PHI = (1+ Math.sqrt(5))/2;
-        var pinks = ['FFC0CB', 'FFB6C1', 'FF69B4', 'FF1493', 'F1DDCF', 'FFDDF4', 'F9CCCA', 'F4C2C2', 'E8CCD7', 'EFBBCC', 'F2BDCD', 'FFB7C5', 'FFA6C9', 'FC89AC', 'F19CBB', 'E68FAC', 'DE6FA1', 'E4717A', 'F88379', 'DEA5A4', 'D7837F', 'C4AEAD', 'E75480', 'DE5285', 'FB607F', 'FF007F', 'FF6FFF', 'FC0FC0', 'CF6BA9', 'CC33CC'];
-
-        function draw()
-        {
-            var pink = pinks[Math.floor(Math.random() * pinks.length)];
-            var canvas = document.getElementById("content");
-            var context = canvas.getContext("2d");
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            context.fillStyle = "#" + pink;
-            context.fillRect(0, 0, canvas.width, Math.floor(canvas.height / PHI));
-            context.fillStyle = "#CCCCCC";
-            context.fillRect(0, Math.floor(canvas.height / PHI), canvas.width, Math.ceil(canvas.height - canvas.height / PHI));
-
-            canvas.ontouchstart = draw;
-        };
-
-        window.onload = draw;
-        window.onmousedown = draw;
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-6227584-44']);
-        _gaq.push(['_setDomainName', 'thesearchfornotitle.com']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
 </head>
 <body>
-<canvas id="content" height="576" role="main" width="576">This website required <code>html:canvas</code> support.</canvas>
+<canvas id="content" height="576" role="main" width="576">This website requires <code>html:canvas</code> support.</canvas>
 <noscript>This website requires <i>JavaScript</i> support.</noscript>
+<script>
+
+    "use strict";
+
+    var PHI = (1+ Math.sqrt(5))/2;
+    var pinks = ['FFC0CB', 'FFB6C1', 'FF69B4', 'FF1493', 'F1DDCF', 'FFDDF4', 'F9CCCA', 'F4C2C2', 'E8CCD7', 'EFBBCC', 'F2BDCD', 'FFB7C5', 'FFA6C9', 'FC89AC', 'F19CBB', 'E68FAC', 'DE6FA1', 'E4717A', 'F88379', 'DEA5A4', 'D7837F', 'C4AEAD', 'E75480', 'DE5285', 'FB607F', 'FF007F', 'FF6FFF', 'FC0FC0', 'CF6BA9', 'CC33CC'];
+
+    function draw()
+    {
+        var pink = pinks[Math.floor(Math.random() * pinks.length)];
+        var canvas = document.getElementById("content");
+        var context = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        context.fillStyle = "#" + pink;
+        context.fillRect(0, 0, canvas.width, Math.floor(canvas.height / PHI));
+        context.fillStyle = "#CCCCCC";
+        context.fillRect(0, Math.floor(canvas.height / PHI), canvas.width, Math.ceil(canvas.height - canvas.height / PHI));
+
+        canvas.ontouchstart = draw;
+    }
+
+    window.onload = draw;
+    window.onmousedown = draw;
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6227584-44']);
+    _gaq.push(['_setDomainName', 'thesearchfornotitle.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
 </body>
 </html>
