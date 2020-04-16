@@ -30,6 +30,7 @@
         *{border:0;margin:0;outline:0;padding:0;text-decoration:none}
         body,canvas,html{display:block;height:100%;overflow:hidden;width:100%}
     </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6227584-61"></script>
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -80,16 +81,11 @@
     window.onload = draw;
     window.onmousedown = draw;
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-6227584-44']);
-    _gaq.push(['_setDomainName', 'thesearchfornotitle.com']);
-    _gaq.push(['_trackPageview']);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+    gtag('config', 'UA-6227584-61');
 
 </script>
 </body>
