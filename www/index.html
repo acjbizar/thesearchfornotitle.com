@@ -62,14 +62,14 @@
 
     "use strict";
 
-    var PHI = (1+ Math.sqrt(5))/2;
-    var pinks = ['FFC0CB', 'FFB6C1', 'FF69B4', 'FF1493', 'F1DDCF', 'FFDDF4', 'F9CCCA', 'F4C2C2', 'E8CCD7', 'EFBBCC', 'F2BDCD', 'FFB7C5', 'FFA6C9', 'FC89AC', 'F19CBB', 'E68FAC', 'DE6FA1', 'E4717A', 'F88379', 'DEA5A4', 'D7837F', 'C4AEAD', 'E75480', 'DE5285', 'FB607F', 'FF007F', 'FF6FFF', 'FC0FC0', 'CF6BA9', 'CC33CC'];
+    const PHI = (1+ Math.sqrt(5))/2;
+    const pinks = ['FFC0CB', 'FFB6C1', 'FF69B4', 'FF1493', 'F1DDCF', 'FFDDF4', 'F9CCCA', 'F4C2C2', 'E8CCD7', 'EFBBCC', 'F2BDCD', 'FFB7C5', 'FFA6C9', 'FC89AC', 'F19CBB', 'E68FAC', 'DE6FA1', 'E4717A', 'F88379', 'DEA5A4', 'D7837F', 'C4AEAD', 'E75480', 'DE5285', 'FB607F', 'FF007F', 'FF6FFF', 'FC0FC0', 'CF6BA9', 'CC33CC'];
 
     function draw()
     {
-        var pink = pinks[Math.floor(Math.random() * pinks.length)];
-        var canvas = document.getElementById("content");
-        var context = canvas.getContext("2d");
+        let pink = pinks[Math.floor(Math.random() * pinks.length)];
+        let canvas = document.getElementById("content");
+        let context = canvas.getContext("2d");
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         context.fillStyle = "#" + pink;

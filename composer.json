@@ -1,0 +1,15 @@
+{
+    "name": "acj/thesearchfornotitle.com",
+    "description": "The Search for No Title.",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "ACJ",
+            "email": "gitlab@acjs.net"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    }
+}
